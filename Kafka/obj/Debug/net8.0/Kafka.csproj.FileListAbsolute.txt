@@ -1,0 +1,12 @@
+F:\projects\finances\finances-receipt-creator\Kafka\bin\Debug\net8.0\Kafka.deps.json
+F:\projects\finances\finances-receipt-creator\Kafka\bin\Debug\net8.0\Kafka.dll
+F:\projects\finances\finances-receipt-creator\Kafka\bin\Debug\net8.0\Kafka.pdb
+F:\projects\finances\finances-receipt-creator\Kafka\obj\Debug\net8.0\Kafka.csproj.AssemblyReference.cache
+F:\projects\finances\finances-receipt-creator\Kafka\obj\Debug\net8.0\Kafka.GeneratedMSBuildEditorConfig.editorconfig
+F:\projects\finances\finances-receipt-creator\Kafka\obj\Debug\net8.0\Kafka.AssemblyInfoInputs.cache
+F:\projects\finances\finances-receipt-creator\Kafka\obj\Debug\net8.0\Kafka.AssemblyInfo.cs
+F:\projects\finances\finances-receipt-creator\Kafka\obj\Debug\net8.0\Kafka.csproj.CoreCompileInputs.cache
+F:\projects\finances\finances-receipt-creator\Kafka\obj\Debug\net8.0\Kafka.dll
+F:\projects\finances\finances-receipt-creator\Kafka\obj\Debug\net8.0\refint\Kafka.dll
+F:\projects\finances\finances-receipt-creator\Kafka\obj\Debug\net8.0\Kafka.pdb
+F:\projects\finances\finances-receipt-creator\Kafka\obj\Debug\net8.0\ref\Kafka.dll

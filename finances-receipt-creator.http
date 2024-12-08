@@ -1,0 +1,6 @@
+@FinancesReceiptCreator_HostAddress = http://localhost:5189
+
+GET {{FinancesReceiptCreator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
