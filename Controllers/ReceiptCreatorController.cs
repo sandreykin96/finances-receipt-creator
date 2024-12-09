@@ -1,6 +1,6 @@
 using AutoFixture;
 using AutoFixture.Kernel;
-using Kafka;
+using Lib.Kafka;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading;

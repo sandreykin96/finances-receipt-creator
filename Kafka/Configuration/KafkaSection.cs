@@ -1,8 +1,8 @@
-﻿namespace Kafka.Configuration;
+﻿namespace Lib.Kafka.Configuration;
 
-public sealed class KafkaSection
+public class KafkaSection
 {
-	internal const string SectionName = "Kafka";
+	public const string SectionName = "Kafka";
 
 	public string Uri { get; set; } = "localhost:9092";
 

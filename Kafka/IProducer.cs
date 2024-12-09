@@ -1,4 +1,4 @@
-﻿namespace Kafka;
+﻿namespace Lib.Kafka;
 
 public interface IProducer
 {

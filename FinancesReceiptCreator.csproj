@@ -17,4 +17,31 @@
 	<PackageReference Include="Moq" Version="4.20.69" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Kafka\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Kafka\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Kafka\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Kafka\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Kafka\bin\Debug\net8.0\Kafka.deps.json" />
+    <_ContentIncludedByDefault Remove="Kafka\obj\Kafka.csproj.nuget.dgspec.json" />
+    <_ContentIncludedByDefault Remove="Kafka\obj\project.assets.json" />
+    <_ContentIncludedByDefault Remove="Kafka\obj\project.packagespec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="Kafka\Kafka.csproj" />
+  </ItemGroup>
+
 </Project>

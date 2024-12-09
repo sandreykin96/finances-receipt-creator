@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "4bxjRcTVN8wDmr3kRIingQA3KkXJflNCDNF9y+CyhHQ=",
+  "Source": "FinancesReceiptCreator",
+  "BasePath": "_content/FinancesReceiptCreator",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,11 +1,11 @@
 ﻿using System.Text.Json;
 using Confluent.Kafka;
-using Kafka.Configuration;
+using Lib.Kafka.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace Kafka;
+namespace Lib.Kafka;
 
-internal sealed class Producer : IProducer
+public class Producer : IProducer
 {
     private readonly KafkaSection _config;
     private readonly JsonSerializerOptions _jsonSerializerOptions;

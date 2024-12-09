@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace Kafka;
+namespace Lib.Kafka;
 
 public class SnakeCaseNamingPolicy : JsonNamingPolicy
 {

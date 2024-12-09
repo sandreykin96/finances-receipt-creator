@@ -1,5 +1,5 @@
-using Kafka;
-using Kafka.Configuration;
+using Lib.Kafka;
+using Lib.Kafka.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.Configure<KafkaSection>(builder.Configuration.GetSection(KafkaSection.SectionName));
+builder.Services.Configure<KafkaSection>(builder.Configuration.GetSection(Lib.Kafka.Configuration.KafkaSection.SectionName));
 builder.Services.AddScoped<IProducer, Producer>();
 
 var app = builder.Build();
