@@ -1,23 +1,21 @@
 ﻿using System.Text.Json;
 using Confluent.Kafka;
-using Lib.Kafka.Configuration;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
 namespace Lib.Kafka;
 
 public class Producer : IProducer
 {
-    private readonly KafkaSection _config;
     private readonly JsonSerializerOptions _jsonSerializerOptions;
     private readonly Lazy<IProducer<Null, byte[]>> _producerLazy;
     private readonly ILogger<Producer> _logger;
 
-    public Producer(KafkaSection config, ILogger<Producer> logger)
+    public Producer(IConfiguration config, ILogger<Producer> logger)
     {
-        _config = config ?? throw new ArgumentNullException(nameof(config));
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         _producerLazy = new Lazy<IProducer<Null, byte[]>>(CreateProducer);
-        
+
         _jsonSerializerOptions = new JsonSerializerOptions()
         {
             PropertyNamingPolicy = new SnakeCaseNamingPolicy()
@@ -31,11 +29,11 @@ public class Producer : IProducer
         {
             foreach (var message in messages)
             {
-                await _producerLazy.Value.ProduceAsync(topic ?? _config.OutputTopic, CreateMessage(message),
+                await _producerLazy.Value.ProduceAsync(topic, CreateMessage(message),
                     cancellationToken);
             }
 
-            _producerLazy.Value.Flush(TimeSpan.FromSeconds(_config.FlushTimeout));
+            _producerLazy.Value.Flush(TimeSpan.FromSeconds(30));
         }
         catch (Exception e)
         {
@@ -51,14 +49,11 @@ public class Producer : IProducer
     {
         var producerConfig = new ProducerConfig
         {
-            BootstrapServers = _config.Uri,
-            LingerMs = _config.LingerMs,
-            BatchSize = _config.BatchSize,
-            BatchNumMessages = _config.BatchNumMessages,
-            MessageSendMaxRetries = _config.MessageSendMaxRetries,
-            Acks = Acks.Leader,
-            MessageMaxBytes = _config.MessageMaxBytes,
-            MessageTimeoutMs = _config.MessageTimeout
+            BootstrapServers = "localhost:9092",
+            LingerMs = 5,
+            BatchSize = 10000,
+            BatchNumMessages = 1000,
+            Acks = Acks.Leader
         };
 
         return new ProducerBuilder<Null, byte[]>(producerConfig)

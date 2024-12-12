@@ -2,8 +2,6 @@ using AutoFixture;
 using AutoFixture.Kernel;
 using Lib.Kafka;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics.CodeAnalysis;
-using System.Threading;
 
 namespace FinancesReceiptCreator.Controllers
 {
@@ -44,7 +42,7 @@ namespace FinancesReceiptCreator.Controllers
 
             }
 
-            await _kafkaProducer.SendAsync(listOfReceipts);
+            await _kafkaProducer.SendAsync(listOfReceipts, "receipt");
 
             return Ok();
         }
