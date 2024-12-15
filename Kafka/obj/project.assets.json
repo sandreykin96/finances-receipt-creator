@@ -8479,25 +8479,29 @@
     ]
   },
   "packageFolders": {
-    "/Users/yurysandreykin/.nuget/packages/": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/yurysandreykin/finances-receipt-creator/Kafka/Kafka.csproj",
+      "projectUniqueName": "F:\\projects\\finances\\finances-receipt-creator\\Kafka\\Kafka.csproj",
       "projectName": "Kafka",
-      "projectPath": "/Users/yurysandreykin/finances-receipt-creator/Kafka/Kafka.csproj",
-      "packagesPath": "/Users/yurysandreykin/.nuget/packages/",
-      "outputPath": "/Users/yurysandreykin/finances-receipt-creator/Kafka/obj/",
+      "projectPath": "F:\\projects\\finances\\finances-receipt-creator\\Kafka\\Kafka.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "F:\\projects\\finances\\finances-receipt-creator\\Kafka\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/yurysandreykin/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://artifactory.gnivc.ru:443/artifactory/api/nuget/v3/uz-nuget": {}
       },
       "frameworks": {
         "net8.0": {
@@ -8548,7 +8552,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

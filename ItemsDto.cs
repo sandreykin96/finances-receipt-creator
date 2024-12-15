@@ -17,4 +17,7 @@ public class ItemsDto
     public int? ProductType { get; set; }
 
     public int? PaymentType { get; set; }
+
+    public DateTimeOffset CreatedAt { get; set; }
+
 }
