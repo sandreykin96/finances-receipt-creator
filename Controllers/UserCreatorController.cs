@@ -53,6 +53,7 @@ namespace FinancesReceiptCreator.Controllers
                 users.AmountOfMoney = users.AmountOfMoney * 1000;
                 users.Debt = users.Debt * 5000;
                 users.SavingGoal = users.SavingGoal * 10000;
+                users.Income = users.Income * 500;
                 listOfReceipts.Add(users);
             }
 

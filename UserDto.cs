@@ -13,4 +13,6 @@ public class UserDto
     public decimal AmountOfMoney { get; set; }
 
     public decimal Debt { get; set; }
+
+    public decimal Income { get; set; }
 }
