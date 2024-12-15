@@ -9,5 +9,7 @@ public class ReceiptDto
 
     public long? Id { get; set; }
 
-    public string User { get; set; }
+    public int User { get; set; }
+
+    public DateTimeOffset CreatedAt { get; set; }
 }

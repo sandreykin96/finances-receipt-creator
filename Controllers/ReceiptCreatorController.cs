@@ -2,6 +2,7 @@ using AutoFixture;
 using AutoFixture.Kernel;
 using Lib.Kafka;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace FinancesReceiptCreator.Controllers
 {
@@ -36,7 +37,7 @@ namespace FinancesReceiptCreator.Controllers
                 var receipt = _fixture.Build<ReceiptDto>().Create();
 
                 receipt.Id = i;
-                receipt.User = $"user_{i}";
+                receipt.User = new Random().Next(0, 9);
 
                 listOfReceipts.Add(receipt);
 
